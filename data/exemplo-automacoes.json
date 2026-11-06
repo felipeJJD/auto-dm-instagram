@@ -1,0 +1,44 @@
+{
+  "source": "Exemplo para importar com `npm run import -- data/exemplo-automacoes.json`. Troque os IDs pelos dos seus posts (aba Posts do painel) e os links pelos seus. Tudo entra inativo.",
+  "defaults": {
+    "trigger_mode": "any",
+    "keywords": [],
+    "include_replies": true,
+    "public_replies": [
+      "Te mandei na DM!",
+      "Olha a sua DM 👀",
+      "Enviado! Confere as mensagens."
+    ],
+    "welcome_text": "Oi! Que bom que você gostou. Clica no botão aqui embaixo que eu te mando o material.",
+    "ask_follow_text": "Quase lá! Me segue e clica de novo no botão para liberar o link.",
+    "ask_follow_button": "Já estou seguindo",
+    "link_text": "Prontinho, é só clicar aqui embaixo."
+  },
+  "automations": [
+    {
+      "name": "Guia de exemplo",
+      "media_id": "17900000000000001",
+      "media_permalink": "https://www.instagram.com/reel/EXEMPLO1/",
+      "welcome_button": "Quero o guia",
+      "link_button": "Abrir o guia",
+      "link_url": "https://exemplo.com/guia"
+    },
+    {
+      "name": "Cupom por palavra-chave",
+      "media_id": "17900000000000002",
+      "trigger_mode": "keywords",
+      "keywords": ["cupom", "desconto"],
+      "welcome_button": "Pegar o cupom",
+      "link_text": "Seu cupom está no link abaixo. Vale até domingo!",
+      "link_button": "Ver cupom",
+      "link_url": "https://exemplo.com/cupom"
+    },
+    {
+      "name": "Planilha grátis",
+      "media_id": "17900000000000003",
+      "welcome_button": "Quero a planilha",
+      "link_button": "Baixar planilha",
+      "link_url": "https://exemplo.com/planilha"
+    }
+  ]
+}

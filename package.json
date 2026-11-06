@@ -1,0 +1,27 @@
+{
+  "name": "auto-dm-instagram",
+  "version": "0.1.0",
+  "description": "Comentou no Reels, recebeu o link na DM: automação de Instagram própria, sem mensalidade (resposta pública, DM com botão, checa se segue, conta cliques).",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "24.x"
+  },
+  "scripts": {
+    "test": "node --test --test-concurrency=1 --test-force-exit \"test/**/*.test.ts\"",
+    "typecheck": "tsc",
+    "start": "node scripts/start.ts",
+    "migrate": "node scripts/migrate.ts",
+    "import": "node scripts/importar.ts"
+  },
+  "dependencies": {
+    "pg": "^8.23.1"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.5.15",
+    "@types/node": "^26.6.6",
+    "@types/pg": "^8.23.1",
+    "typescript": "^7.0.2"
+  }
+}

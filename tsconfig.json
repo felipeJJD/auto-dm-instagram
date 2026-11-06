@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+    "erasableSyntaxOnly": true,
+    "strict": true,
+    "module": "nodenext",
+    "target": "es2023",
+    "skipLibCheck": true,
+    "types": ["node"]
+  },
+  "include": ["src", "scripts", "test"]
+}
